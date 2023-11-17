@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+      .entry{
+          -webkit-padding-start: 30px;
+      }
+      .entry li {
+          line-height: 29px;
+          margin-left: -10px;
+      }
+      .entry li div{
+          margin-right: 10px;
+          padding-left: 8px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          background: #222222;
+          color: white;
+          word-break: break-all;
+          -ms-word-wrap: break-word;
+          word-wrap: break-word;
+          line-height: 15px;
+          font-size: 10pt;
+      }
+      .entry li button{
+          margin-top: 5px;
+          height: 35px;
+          color: #111111;
+      }
+
+    </style>
+
+
+    <script type="text/javascript">
+        var idVar;
+        function showSafeKeyboard(idTmp) {
+            idVar = idTmp;
+
+            setLoseFocus();
+
+            var et = document.getElementById(idVar);
+            var height = getPos(et);
+
+            AndroidNative.showSafeKeyboard(height);
+        }
+
+        function closeSafeKeyboard() {
+            AndroidNative.closeSafeKeybord();
+        }
+
+        function setFocus() {//设置焦点
+          var et = document.getElementById(idVar);
+          et.focus();
+        }
+
+        function setLoseFocus() {//取消焦点
+          var et = document.getElementById(idVar);
+          et.blur();
+        }
+
+        function getPos(o) //取元素坐标
+        {
+            var y = o.offsetTop;
+            y += o.offsetHeight;
+            return y;
+        }
+
+        function del() {//删除
+            var str = document.getElementById(idVar).value;
+            var strNew = str.substring(0,str.length-1);
+            document.getElementById(idVar).value = strNew;
+        }
+
+        function insert(str) {//插入
+            <!--AndroidNative.logInfo("hahahahahhaa")-->
+            var s = document.getElementById(idVar).value;
+            var strNew = s + str;
+            document.getElementById(idVar).value = strNew;
+        }
+    </script>
+</head>
+
+<body>
+<div class="blog-header">
+    <h3>关闭键盘预览和按键显示,启动随机键盘</h3>
+</div>
+
+<div class="col-sm-10">
+
+</div>
+<li>
+    <div>
+        帐号: <input id="username" type="text" placeholder="请输入您的帐号" onclick="closeSafeKeyboard()" onfocus="closeSafeKeyboard();">
+    </div>
+</li>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<li>
+    <div>
+        密码: <input id="psd1" type="text" placeholder="请输入您的密码1" onclick="showSafeKeyboard('psd1')" onfocus="showSafeKeyboard('psd1');">
+    </div>
+</li>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<li>
+    <div>
+        密码: <input id="psd2" type="text" placeholder="请输入您的密码2" onclick="showSafeKeyboard('psd2')" onfocus="showSafeKeyboard('psd2');">
+    </div>
+</li>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<li>
+    <div>
+        密码: <input id="psd3" type="text" placeholder="请输入您的密码3" onclick="showSafeKeyboard('psd3')" onfocus="showSafeKeyboard('psd3');">
+    </div>
+</li>
+
+</body>
+</html>

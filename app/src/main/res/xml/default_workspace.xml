@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<favorites xmlns:launcher="http://schemas.android.com/apk/res-auto">
+    <!-- 时钟 -->
+    <appwidget
+        launcher:packageName="com.mobilewise.mobileware"
+        launcher:className="com.mobilewise.launcher.widget.clockwidget.ClockwidgetProvider"
+        launcher:screen="1"
+        launcher:x="0"
+        launcher:y="0"
+        launcher:spanX="4"
+        launcher:spanY="2" />
+    <!-- 浏览器 -->
+    <appwidget
+        launcher:packageName="com.mobilewise.mobileware"
+        launcher:className="com.mobilewise.launcher.widget.browswidget.BrowsWidgetProvider"
+        launcher:screen="1"
+        launcher:x="0"
+        launcher:y="3"
+        launcher:spanX="1"
+        launcher:spanY="1" />
+    <!-- 切换桌面 -->
+    <appwidget
+        launcher:packageName="com.mobilewise.mobileware"
+        launcher:className="com.mobilewise.launcher.widget.switchwidget.SwitchWidgetProvider"
+        launcher:screen="1"
+        launcher:x="2"
+        launcher:y="3"
+        launcher:spanX="1"
+        launcher:spanY="1" />
+    <!-- 商城 -->
+    <appwidget
+        launcher:packageName="com.mobilewise.mobileware"
+        launcher:className="com.mobilewise.launcher.widget.storewidget.StoreWidgetProvider"
+        launcher:screen="1"
+        launcher:x="1"
+        launcher:y="3"
+        launcher:spanX="1"
+        launcher:spanY="1" />
+    <!-- 文档 -->
+    <appwidget
+        launcher:packageName="com.mobilewise.mobileware"
+        launcher:className="com.mobilewise.launcher.widget.enterprise.EnterpriseWidgetProvider"
+        launcher:screen="1"
+        launcher:x="3"
+        launcher:y="3"
+        launcher:spanX="1"
+        launcher:spanY="1" />
+    <!-- 通知 -->
+    <appwidget
+        launcher:packageName="com.mobilewise.mobileware"
+        launcher:className="com.mobilewise.launcher.widget.notify.NotifyWidgetProvider"
+        launcher:screen="1"
+        launcher:x="0"
+        launcher:y="2"
+        launcher:spanX="1"
+        launcher:spanY="1" />
+    <!-- 设置 -->
+    <appwidget
+        launcher:packageName="com.mobilewise.mobileware"
+        launcher:className="com.mobilewise.launcher.widget.setting.SettingWidgetProvider"
+        launcher:screen="1"
+        launcher:x="1"
+        launcher:y="2"
+        launcher:spanX="1"
+        launcher:spanY="1" />
+
+    <!-- safe -->
+    <appwidget
+        launcher:packageName="com.mobilewise.mobileware"
+        launcher:className="com.mobilewise.launcher.widget.security.SecurityWidgetProvider"
+        launcher:screen="1"
+        launcher:x="2"
+        launcher:y="2"
+        launcher:spanX="1"
+        launcher:spanY="1" />
+</favorites>

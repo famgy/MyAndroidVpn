@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    tools:context=".activity.MainActivity">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_start_vpn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="启动VPN" />
+
+                <Button
+                    android:id="@+id/bt_stop_vpn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="关闭VPN" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/bt_my_vpn_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="启动AidlVpn服务(启动子进程)" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_read_cache_vpn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="读取vpn虚拟网卡" />
+
+                <Button
+                    android:id="@+id/bt_write_cache_vpn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="写入vpn虚拟网卡" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/et_web_request"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="http://220.181.38.150" />
+            <Button
+                android:id="@+id/bt_web_request"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="访问资源" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
